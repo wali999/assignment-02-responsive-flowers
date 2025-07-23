@@ -158,9 +158,47 @@ main {
     margin-bottom: 20px;
 }
 
+
+/* Flower and Plants lover style */
+
+.lover {
+    margin-top: 130px;
+    /* gap: 100px; */
+}
+
+/* .seller-img {
+    width: 100%;
+} */
+
+.badge {
+    width: 280px;
+    height: 280px;
+    margin-left: -190px;
+    margin-top: -125px;
+}
+
+.lover-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.lover-content {
+    margin: 40px 0 40px 60px;
+}
+
+.lover-description li {
+    margin-bottom: 30px;
+}
+
+
+
+
 /* Responsive for mobile device */
 @media screen and (max-width: 576px) {
-    .nav-text {
+
+    .nav-text,
+    .badge {
         display: none;
     }
 
@@ -178,4 +216,15 @@ main {
         justify-items: center;
     }
 
+    .lover {
+        flex-direction: column;
+    }
+
+    .seller-img {
+        width: 100%;
+    }
+
+    .lover-content {
+        margin: 0;
+    }
 }
