@@ -136,8 +136,6 @@ footer {
 }
 
 .plant-card {
-    /* width: 270px;
-    height: 480px; */
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -432,13 +430,19 @@ footer {
     }
 
     .join-form {
-        max-width: 300px;
+        max-width: 290px;
+    }
+
+    .join-form button {
+        padding: 10px 10px;
+
+
     }
 
     .links-list {
         grid-template-columns: 1fr;
-        justify-self: start;
     }
+
 }
 
 
