@@ -84,7 +84,8 @@
 }
 
 .navbar,
-.banner {
+.banner,
+footer {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -298,10 +299,13 @@
     background-image: url(../assets/news-letter-bg.png);
     background-size: cover;
     background-position: center;
-    position: relative;
-    text-align: center;
     color: white;
     height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
 }
 
 .join-content {
@@ -312,6 +316,7 @@
 .join-title {
     font-size: 3rem;
     font-weight: 700;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -338,6 +343,38 @@
 
 }
 
+/* footer section styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 130px;
+}
+
+.footer-description {
+    font-size: 1.3rem;
+    max-width: 350px;
+}
+
+.links-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 100px;
+}
+
+.links-list li {
+    list-style: none;
+}
+
+.links-list a {
+    text-decoration: none;
+    color: #8987A1;
+}
+
+.social img {
+    margin: 20px;
+}
+
 /* Responsive for mobile device */
 @media screen and (max-width: 576px) {
 
@@ -361,7 +398,8 @@
     }
 
     .lover,
-    .deals-cards {
+    .deals-cards,
+    footer {
         flex-direction: column;
     }
 
@@ -392,8 +430,19 @@
     .ana-card {
         border-radius: 0%;
     }
+
+    .join-form {
+        max-width: 300px;
+    }
+
+    .links-list {
+        grid-template-columns: 1fr;
+        justify-self: start;
+    }
 }
 
+
+/* Medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .plants-cards {
         grid-template-columns: repeat(3, 1fr);
